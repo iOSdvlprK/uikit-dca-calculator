@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D8AD6CFD2B18BF27005E99FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6CFC2B18BF27005E99FE /* AppDelegate.swift */; };
 		D8AD6CFF2B18BF27005E99FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6CFE2B18BF27005E99FE /* SceneDelegate.swift */; };
-		D8AD6D012B18BF27005E99FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6D002B18BF27005E99FE /* ViewController.swift */; };
+		D8AD6D012B18BF27005E99FE /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6D002B18BF27005E99FE /* SearchTableViewController.swift */; };
 		D8AD6D042B18BF27005E99FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AD6D022B18BF27005E99FE /* Main.storyboard */; };
 		D8AD6D062B18BF28005E99FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AD6D052B18BF28005E99FE /* Assets.xcassets */; };
 		D8AD6D092B18BF28005E99FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AD6D072B18BF28005E99FE /* LaunchScreen.storyboard */; };
+		D8AD6D122B18C06A005E99FE /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D8AD6D112B18C06A005E99FE /* MBProgressHUD */; };
+		D8AD6D152B18C0A5005E99FE /* Loaf in Frameworks */ = {isa = PBXBuildFile; productRef = D8AD6D142B18C0A5005E99FE /* Loaf */; };
+		D8AD6D192B18D872005E99FE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6D182B18D872005E99FE /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8AD6CF92B18BF27005E99FE /* uikit-dca-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uikit-dca-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AD6CFC2B18BF27005E99FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8AD6CFE2B18BF27005E99FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D8AD6D002B18BF27005E99FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8AD6D002B18BF27005E99FE /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		D8AD6D032B18BF27005E99FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8AD6D052B18BF28005E99FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8AD6D082B18BF28005E99FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8AD6D0A2B18BF28005E99FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8AD6D182B18D872005E99FE /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AD6D152B18C0A5005E99FE /* Loaf in Frameworks */,
+				D8AD6D122B18C06A005E99FE /* MBProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,32 @@
 		D8AD6CFB2B18BF27005E99FE /* uikit-dca-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				D8AD6D172B18D83F005E99FE /* Controller */,
+				D8AD6D162B18D832005E99FE /* View */,
 				D8AD6CFC2B18BF27005E99FE /* AppDelegate.swift */,
 				D8AD6CFE2B18BF27005E99FE /* SceneDelegate.swift */,
-				D8AD6D002B18BF27005E99FE /* ViewController.swift */,
 				D8AD6D022B18BF27005E99FE /* Main.storyboard */,
 				D8AD6D052B18BF28005E99FE /* Assets.xcassets */,
 				D8AD6D072B18BF28005E99FE /* LaunchScreen.storyboard */,
 				D8AD6D0A2B18BF28005E99FE /* Info.plist */,
 			);
 			path = "uikit-dca-calculator";
+			sourceTree = "<group>";
+		};
+		D8AD6D162B18D832005E99FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8AD6D182B18D872005E99FE /* SearchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8AD6D172B18D83F005E99FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8AD6D002B18BF27005E99FE /* SearchTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,10 @@
 			dependencies = (
 			);
 			name = "uikit-dca-calculator";
+			packageProductDependencies = (
+				D8AD6D112B18C06A005E99FE /* MBProgressHUD */,
+				D8AD6D142B18C0A5005E99FE /* Loaf */,
+			);
 			productName = "uikit-dca-calculator";
 			productReference = D8AD6CF92B18BF27005E99FE /* uikit-dca-calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,10 @@
 				Base,
 			);
 			mainGroup = D8AD6CF02B18BF27005E99FE;
+			packageReferences = (
+				D8AD6D102B18C06A005E99FE /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				D8AD6D132B18C0A5005E99FE /* XCRemoteSwiftPackageReference "Loaf" */,
+			);
 			productRefGroup = D8AD6CFA2B18BF27005E99FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8AD6D012B18BF27005E99FE /* ViewController.swift in Sources */,
+				D8AD6D012B18BF27005E99FE /* SearchTableViewController.swift in Sources */,
+				D8AD6D192B18D872005E99FE /* SearchTableViewCell.swift in Sources */,
 				D8AD6CFD2B18BF27005E99FE /* AppDelegate.swift in Sources */,
 				D8AD6CFF2B18BF27005E99FE /* SceneDelegate.swift in Sources */,
 			);
@@ -356,6 +388,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8AD6D102B18C06A005E99FE /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D8AD6D132B18C0A5005E99FE /* XCRemoteSwiftPackageReference "Loaf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/schmidyy/Loaf";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8AD6D112B18C06A005E99FE /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8AD6D102B18C06A005E99FE /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		D8AD6D142B18C0A5005E99FE /* Loaf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8AD6D132B18C0A5005E99FE /* XCRemoteSwiftPackageReference "Loaf" */;
+			productName = Loaf;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8AD6CF12B18BF27005E99FE /* Project object */;
 }
