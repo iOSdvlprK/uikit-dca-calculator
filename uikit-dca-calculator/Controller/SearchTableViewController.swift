@@ -9,6 +9,11 @@ import UIKit
 import Combine
 
 class SearchTableViewController: UITableViewController {
+    private enum Mode {
+        case onboarding
+        case search
+    }
+    
     private lazy var searchController: UISearchController = {
         let sc = UISearchController(searchResultsController: nil)
         sc.searchResultsUpdater = self
@@ -22,6 +27,7 @@ class SearchTableViewController: UITableViewController {
     private let apiService = APIService()
     private var subscribers = Set<AnyCancellable>()
     private var searchResults: SearchResults?
+    @Published private var mode: Mode = .onboarding
     @Published private var searchQuery = String()
 
     override func viewDidLoad() {
@@ -32,6 +38,7 @@ class SearchTableViewController: UITableViewController {
 
     private func setupNavigationBar() {
         navigationItem.searchController = searchController
+        navigationItem.title = "Search"
     }
     
     private func observeForm() {
@@ -51,6 +58,15 @@ class SearchTableViewController: UITableViewController {
                     self.tableView.reloadData()
                 }.store(in: &self.subscribers)
             }.store(in: &subscribers)
+        
+        $mode.sink { [unowned self] mode in
+            switch mode {
+            case .onboarding:
+                self.tableView.backgroundView = SearchPlaceholderView()
+            case .search:
+                self.tableView.backgroundView = nil
+            }
+        }.store(in: &subscribers)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,6 +87,10 @@ extension SearchTableViewController: UISearchResultsUpdating, UISearchController
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchQuery = searchController.searchBar.text, !searchQuery.isEmpty else { return }
         self.searchQuery = searchQuery
+    }
+    
+    func willPresentSearchController(_ searchController: UISearchController) {
+        mode = .search
     }
 }
 
