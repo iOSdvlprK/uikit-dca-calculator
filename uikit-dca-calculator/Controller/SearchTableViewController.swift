@@ -7,8 +7,9 @@
 
 import UIKit
 import Combine
+import MBProgressHUD
 
-class SearchTableViewController: UITableViewController {
+class SearchTableViewController: UITableViewController, UIAnimatable {
     private enum Mode {
         case onboarding
         case search
@@ -45,8 +46,10 @@ class SearchTableViewController: UITableViewController {
         $searchQuery
             .debounce(for: .milliseconds(750), scheduler: RunLoop.main)
             .sink { [unowned self] searchQuery in
-//                print(searchQuery)
-                self.apiService.fetchSymbolsPublisher(keywords: searchQuery).sink { completion in
+                guard !searchQuery.isEmpty else { return }
+                showLoadingAnimation()
+                self.apiService.fetchSymbolsPublisher(keywords: searchQuery).sink { [unowned self] completion in
+                    self.hideLoadingAnimation()
                     switch completion {
                     case .failure(let error):
                         print(error.localizedDescription)
@@ -80,6 +83,10 @@ class SearchTableViewController: UITableViewController {
             cell.configure(with: searchResult)
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showCalculator", sender: nil)
     }
 }
 
