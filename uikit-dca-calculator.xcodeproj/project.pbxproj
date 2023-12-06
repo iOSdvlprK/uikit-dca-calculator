@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D842EC5D2B1CC30E001E0025 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */; };
+		D89F2D162B20BFFB00CD6322 /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F2D152B20BFFB00CD6322 /* CalculatorTableViewController.swift */; };
+		D89F2D182B20C1E500CD6322 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F2D172B20C1E500CD6322 /* Asset.swift */; };
 		D8AD6CFD2B18BF27005E99FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6CFC2B18BF27005E99FE /* AppDelegate.swift */; };
 		D8AD6CFF2B18BF27005E99FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6CFE2B18BF27005E99FE /* SceneDelegate.swift */; };
 		D8AD6D012B18BF27005E99FE /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD6D002B18BF27005E99FE /* SearchTableViewController.swift */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		D89F2D152B20BFFB00CD6322 /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
+		D89F2D172B20C1E500CD6322 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		D8AD6CF92B18BF27005E99FE /* uikit-dca-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uikit-dca-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AD6CFC2B18BF27005E99FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8AD6CFE2B18BF27005E99FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D8AD6D002B18BF27005E99FE /* SearchTableViewController.swift */,
+				D89F2D152B20BFFB00CD6322 /* CalculatorTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			children = (
 				D8EE3CF62B1A06B600A82015 /* SearchResults.swift */,
 				D8C559382B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift */,
+				D89F2D172B20C1E500CD6322 /* Asset.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 				D8AD6D012B18BF27005E99FE /* SearchTableViewController.swift in Sources */,
 				D8C559372B1DECC3005ADB87 /* UIAnimatable.swift in Sources */,
 				D8EE3CF42B1A01D100A82015 /* APIService.swift in Sources */,
+				D89F2D182B20C1E500CD6322 /* Asset.swift in Sources */,
+				D89F2D162B20BFFB00CD6322 /* CalculatorTableViewController.swift in Sources */,
 				D8AD6D192B18D872005E99FE /* SearchTableViewCell.swift in Sources */,
 				D8AD6CFD2B18BF27005E99FE /* AppDelegate.swift in Sources */,
 				D8C559392B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift in Sources */,
