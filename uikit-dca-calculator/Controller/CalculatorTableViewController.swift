@@ -10,6 +10,7 @@ import UIKit
 class CalculatorTableViewController: UITableViewController {
     @IBOutlet weak var symbolLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet var currencyLabels: [UILabel]!
     
     var asset: Asset?
     
@@ -21,5 +22,9 @@ class CalculatorTableViewController: UITableViewController {
     private func setupViews() {
         symbolLabel.text = asset?.searchResult.symbol
         nameLabel.text = asset?.searchResult.name
+        currencyLabels.forEach { label in
+//            label.text = "(\(asset?.searchResult.currency ?? ""))"
+            label.text = asset?.searchResult.currency.addBrackets()
+        }
     }
 }
