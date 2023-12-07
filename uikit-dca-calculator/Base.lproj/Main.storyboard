@@ -346,16 +346,10 @@
                                                                     <rect key="frame" x="0.0" y="32" width="361" height="14"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial date of investment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-vD-gCy">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="134.33333333333334" height="14"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="14"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="14" id="nBl-nK-agB"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                                                            <color key="textColor" systemColor="systemGrayColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(USD)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipX-S7-IQn">
-                                                                            <rect key="frame" x="138.33333333333337" y="0.0" width="222.66666666666663" height="14"/>
                                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                                             <color key="textColor" systemColor="systemGrayColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -388,13 +382,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="tjW-bM-8MA"/>
                     <connections>
+                        <outlet property="investmentAmountCurrencyLabel" destination="wpB-3s-ADp" id="4St-V7-Ulm"/>
                         <outlet property="nameLabel" destination="KLO-0b-xHa" id="x4U-En-MnE"/>
                         <outlet property="symbolLabel" destination="365-1u-psc" id="DsA-E9-Fyi"/>
                         <outletCollection property="currencyLabels" destination="ZPc-pd-bm6" collectionClass="NSMutableArray" id="DfP-Zp-1vf"/>
-                        <outletCollection property="currencyLabels" destination="wpB-3s-ADp" collectionClass="NSMutableArray" id="CW1-mi-aMG"/>
                         <outletCollection property="currencyLabels" destination="fNw-4D-TL4" collectionClass="NSMutableArray" id="bmx-QC-2PD"/>
                         <outletCollection property="currencyLabels" destination="PqU-rK-RIN" collectionClass="NSMutableArray" id="PQg-X9-Aef"/>
-                        <outletCollection property="currencyLabels" destination="ipX-S7-IQn" collectionClass="NSMutableArray" id="Vbs-X5-eAg"/>
                         <segue destination="tfe-dv-4XY" kind="show" id="jeQ-cP-zfQ"/>
                     </connections>
                 </tableViewController>
