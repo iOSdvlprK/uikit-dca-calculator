@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Igq-h7-HjI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Igq-h7-HjI">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -94,7 +95,7 @@
         <scene sceneID="KQ6-un-pvZ">
             <objects>
                 <tableViewController id="Ge5-aD-B1o" customClass="CalculatorTableViewController" customModule="uikit_dca_calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ntt-Tm-6O1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ntt-Tm-6O1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -274,7 +275,7 @@
                                                                         <constraint firstAttribute="height" constant="36" id="5yh-Fi-8mk"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
-                                                                    <textInputTraits key="textInputTraits"/>
+                                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 </textField>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eJ0-aT-yHX">
                                                                     <rect key="frame" x="0.0" y="32" width="361" height="14"/>
@@ -307,7 +308,7 @@
                                                                         <constraint firstAttribute="height" constant="36" id="D7I-BP-3w4"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
-                                                                    <textInputTraits key="textInputTraits"/>
+                                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 </textField>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="yUo-3n-Aty">
                                                                     <rect key="frame" x="0.0" y="32" width="361" height="14"/>
@@ -382,13 +383,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="tjW-bM-8MA"/>
                     <connections>
+                        <outlet property="initialDateOfInvestmentTextField" destination="wxY-Sp-4KR" id="Vij-lG-cvi"/>
+                        <outlet property="initialInvestmentAmountTextField" destination="AGE-s9-xzf" id="b54-0c-miD"/>
                         <outlet property="investmentAmountCurrencyLabel" destination="wpB-3s-ADp" id="4St-V7-Ulm"/>
+                        <outlet property="monthlyDollarCostAveragingTextField" destination="DlI-5r-XBV" id="9Yi-s2-1hS"/>
                         <outlet property="nameLabel" destination="KLO-0b-xHa" id="x4U-En-MnE"/>
                         <outlet property="symbolLabel" destination="365-1u-psc" id="DsA-E9-Fyi"/>
                         <outletCollection property="currencyLabels" destination="ZPc-pd-bm6" collectionClass="NSMutableArray" id="DfP-Zp-1vf"/>
                         <outletCollection property="currencyLabels" destination="fNw-4D-TL4" collectionClass="NSMutableArray" id="bmx-QC-2PD"/>
                         <outletCollection property="currencyLabels" destination="PqU-rK-RIN" collectionClass="NSMutableArray" id="PQg-X9-Aef"/>
-                        <segue destination="tfe-dv-4XY" kind="show" id="jeQ-cP-zfQ"/>
+                        <segue destination="tfe-dv-4XY" kind="show" identifier="showDateSelection" id="jeQ-cP-zfQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQ8-Ww-g2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -448,13 +452,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

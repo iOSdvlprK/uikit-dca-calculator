@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D83EF3AE2B21F6930073E76D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EF3AD2B21F6930073E76D /* String+Extensions.swift */; };
+		D83EF3B02B2207BC0073E76D /* UITextfield+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */; };
 		D842EC5D2B1CC30E001E0025 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */; };
 		D89F2D162B20BFFB00CD6322 /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F2D152B20BFFB00CD6322 /* CalculatorTableViewController.swift */; };
 		D89F2D182B20C1E500CD6322 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F2D172B20C1E500CD6322 /* Asset.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		D83EF3AD2B21F6930073E76D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extensions.swift"; sourceTree = "<group>"; };
 		D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
 		D89F2D152B20BFFB00CD6322 /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
 		D89F2D172B20C1E500CD6322 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				D83EF3AD2B21F6930073E76D /* String+Extensions.swift */,
+				D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				D8C559392B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift in Sources */,
 				D8EE3CF72B1A06B600A82015 /* SearchResults.swift in Sources */,
 				D8AD6CFF2B18BF27005E99FE /* SceneDelegate.swift in Sources */,
+				D83EF3B02B2207BC0073E76D /* UITextfield+Extensions.swift in Sources */,
 				D842EC5D2B1CC30E001E0025 /* SearchPlaceholderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
