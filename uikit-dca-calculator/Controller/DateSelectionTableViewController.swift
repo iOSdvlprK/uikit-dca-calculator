@@ -34,8 +34,9 @@ extension DateSelectionTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! DateSelectionTableViewCell
-        let monthInfo = monthInfos[indexPath.item]
-        cell.configure(with: monthInfo)
+        let index = indexPath.item
+        let monthInfo = monthInfos[index]
+        cell.configure(with: monthInfo, index: index)
         return cell
     }
     
@@ -45,10 +46,18 @@ extension DateSelectionTableViewController {
 }
 
 class DateSelectionTableViewCell: UITableViewCell {
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var monthsAgoLabel: UILabel!
     
-    func configure(with monthInfo: MonthInfo) {
-        backgroundColor = .systemRed
+    func configure(with monthInfo: MonthInfo, index: Int) {
+        monthLabel.text = monthInfo.date.MMYYFormat
+        
+        if index == 1 {
+            monthsAgoLabel.text = "1 month ago"
+        } else if index > 1 {
+            monthsAgoLabel.text = "\(index) months ago"
+        } else {
+            monthsAgoLabel.text = "Just invested"
+        }
     }
 }
