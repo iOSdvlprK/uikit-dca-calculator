@@ -27,6 +27,7 @@
 		D8C559392B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C559382B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift */; };
 		D8EE3CF42B1A01D100A82015 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE3CF32B1A01D100A82015 /* APIService.swift */; };
 		D8EE3CF72B1A06B600A82015 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE3CF62B1A06B600A82015 /* SearchResults.swift */; };
+		D8F3187A2B3C73A500B65074 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F318792B3C73A500B65074 /* Int+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D8C559382B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		D8EE3CF32B1A01D100A82015 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D8EE3CF62B1A06B600A82015 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		D8F318792B3C73A500B65074 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				D83EF3AD2B21F6930073E76D /* String+Extensions.swift */,
 				D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */,
 				D88C52E52B3B005D006F9D29 /* Date+Extensions.swift */,
+				D8F318792B3C73A500B65074 /* Int+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				D8C559372B1DECC3005ADB87 /* UIAnimatable.swift in Sources */,
 				D8EE3CF42B1A01D100A82015 /* APIService.swift in Sources */,
 				D89F2D182B20C1E500CD6322 /* Asset.swift in Sources */,
+				D8F3187A2B3C73A500B65074 /* Int+Extensions.swift in Sources */,
 				D83EF3AE2B21F6930073E76D /* String+Extensions.swift in Sources */,
 				D89F2D162B20BFFB00CD6322 /* CalculatorTableViewController.swift in Sources */,
 				D8AD6D192B18D872005E99FE /* SearchTableViewCell.swift in Sources */,
