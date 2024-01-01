@@ -12,6 +12,7 @@
 		D842EC5D2B1CC30E001E0025 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */; };
 		D85470E02B4052F5001454FA /* DCAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85470DF2B4052F5001454FA /* DCAService.swift */; };
 		D85470E22B405F7B001454FA /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85470E12B405F7B001454FA /* Double+Extensions.swift */; };
+		D880796C2B430BDB007A2157 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D880796B2B430BDB007A2157 /* UIColor+Extensions.swift */; };
 		D88C52E62B3B005D006F9D29 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88C52E52B3B005D006F9D29 /* Date+Extensions.swift */; };
 		D89F2D162B20BFFB00CD6322 /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F2D152B20BFFB00CD6322 /* CalculatorTableViewController.swift */; };
 		D89F2D182B20C1E500CD6322 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F2D172B20C1E500CD6322 /* Asset.swift */; };
@@ -38,6 +39,7 @@
 		D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
 		D85470DF2B4052F5001454FA /* DCAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAService.swift; sourceTree = "<group>"; };
 		D85470E12B405F7B001454FA /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		D880796B2B430BDB007A2157 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		D88C52E52B3B005D006F9D29 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		D89F2D152B20BFFB00CD6322 /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
 		D89F2D172B20C1E500CD6322 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				D88C52E52B3B005D006F9D29 /* Date+Extensions.swift */,
 				D8F318792B3C73A500B65074 /* Int+Extensions.swift */,
 				D85470E12B405F7B001454FA /* Double+Extensions.swift */,
+				D880796B2B430BDB007A2157 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				D89F2D162B20BFFB00CD6322 /* CalculatorTableViewController.swift in Sources */,
 				D8AD6D192B18D872005E99FE /* SearchTableViewCell.swift in Sources */,
 				D88C52E62B3B005D006F9D29 /* Date+Extensions.swift in Sources */,
+				D880796C2B430BDB007A2157 /* UIColor+Extensions.swift in Sources */,
 				D8AD6CFD2B18BF27005E99FE /* AppDelegate.swift in Sources */,
 				D85470E02B4052F5001454FA /* DCAService.swift in Sources */,
 				D85470E22B405F7B001454FA /* Double+Extensions.swift in Sources */,
