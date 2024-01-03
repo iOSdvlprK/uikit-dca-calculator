@@ -31,6 +31,8 @@ struct DCAService {
         
         let gain = currentValue - investmentAmount
         
+        let yield = gain / investmentAmount
+        
         return .init(currentValue: currentValue,
                      investmentAmount: investmentAmount,
                      gain: gain,
