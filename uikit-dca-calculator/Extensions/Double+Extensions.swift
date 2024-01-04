@@ -35,6 +35,8 @@ extension Double {
         formatter.numberStyle = .currency
         if hasDollarSymbol == false {
             formatter.currencySymbol = ""
+        } else {
+            formatter.currencySymbol = "$"
         }
         if hasDecimalPlaces == false {
             formatter.maximumFractionDigits = 0
