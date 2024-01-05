@@ -28,10 +28,21 @@
 		D8B332832B39BE6F00C915AA /* DateSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B332822B39BE6F00C915AA /* DateSelectionTableViewController.swift */; };
 		D8C559372B1DECC3005ADB87 /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C559362B1DECC3005ADB87 /* UIAnimatable.swift */; };
 		D8C559392B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C559382B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift */; };
+		D8E09DA82B470E3F0063A47D /* uikit_dca_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E09DA72B470E3F0063A47D /* uikit_dca_calculatorTests.swift */; };
 		D8EE3CF42B1A01D100A82015 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE3CF32B1A01D100A82015 /* APIService.swift */; };
 		D8EE3CF72B1A06B600A82015 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE3CF62B1A06B600A82015 /* SearchResults.swift */; };
 		D8F3187A2B3C73A500B65074 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F318792B3C73A500B65074 /* Int+Extensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8E09DA92B470E3F0063A47D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8AD6CF12B18BF27005E99FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8AD6CF82B18BF27005E99FE;
+			remoteInfo = "uikit-dca-calculator";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D83EF3AD2B21F6930073E76D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -55,6 +66,8 @@
 		D8B332822B39BE6F00C915AA /* DateSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionTableViewController.swift; sourceTree = "<group>"; };
 		D8C559362B1DECC3005ADB87 /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
 		D8C559382B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
+		D8E09DA52B470E3F0063A47D /* uikit-dca-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uikit-dca-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E09DA72B470E3F0063A47D /* uikit_dca_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uikit_dca_calculatorTests.swift; sourceTree = "<group>"; };
 		D8EE3CF32B1A01D100A82015 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D8EE3CF62B1A06B600A82015 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		D8F318792B3C73A500B65074 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
@@ -67,6 +80,13 @@
 			files = (
 				D8AD6D152B18C0A5005E99FE /* Loaf in Frameworks */,
 				D8AD6D122B18C06A005E99FE /* MBProgressHUD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E09DA22B470E3F0063A47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D8AD6CFB2B18BF27005E99FE /* uikit-dca-calculator */,
+				D8E09DA62B470E3F0063A47D /* uikit-dca-calculatorTests */,
 				D8AD6CFA2B18BF27005E99FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				D8AD6CF92B18BF27005E99FE /* uikit-dca-calculator.app */,
+				D8E09DA52B470E3F0063A47D /* uikit-dca-calculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +170,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		D8E09DA62B470E3F0063A47D /* uikit-dca-calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8E09DA72B470E3F0063A47D /* uikit_dca_calculatorTests.swift */,
+			);
+			path = "uikit-dca-calculatorTests";
+			sourceTree = "<group>";
+		};
 		D8EE3CF22B1A01B500A82015 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +221,24 @@
 			productReference = D8AD6CF92B18BF27005E99FE /* uikit-dca-calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D8E09DA42B470E3F0063A47D /* uikit-dca-calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8E09DAD2B470E3F0063A47D /* Build configuration list for PBXNativeTarget "uikit-dca-calculatorTests" */;
+			buildPhases = (
+				D8E09DA12B470E3F0063A47D /* Sources */,
+				D8E09DA22B470E3F0063A47D /* Frameworks */,
+				D8E09DA32B470E3F0063A47D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8E09DAA2B470E3F0063A47D /* PBXTargetDependency */,
+			);
+			name = "uikit-dca-calculatorTests";
+			productName = "uikit-dca-calculatorTests";
+			productReference = D8E09DA52B470E3F0063A47D /* uikit-dca-calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +246,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					D8AD6CF82B18BF27005E99FE = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					D8E09DA42B470E3F0063A47D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D8AD6CF82B18BF27005E99FE;
 					};
 				};
 			};
@@ -224,6 +276,7 @@
 			projectRoot = "";
 			targets = (
 				D8AD6CF82B18BF27005E99FE /* uikit-dca-calculator */,
+				D8E09DA42B470E3F0063A47D /* uikit-dca-calculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +289,13 @@
 				D8AD6D092B18BF28005E99FE /* LaunchScreen.storyboard in Resources */,
 				D8AD6D062B18BF28005E99FE /* Assets.xcassets in Resources */,
 				D8AD6D042B18BF27005E99FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E09DA32B470E3F0063A47D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +328,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8E09DA12B470E3F0063A47D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E09DA82B470E3F0063A47D /* uikit_dca_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8E09DAA2B470E3F0063A47D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8AD6CF82B18BF27005E99FE /* uikit-dca-calculator */;
+			targetProxy = D8E09DA92B470E3F0063A47D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8AD6D022B18BF27005E99FE /* Main.storyboard */ = {
@@ -460,6 +536,49 @@
 			};
 			name = Release;
 		};
+		D8E09DAB2B470E3F0063A47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joe3524.uikit-dca-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uikit-dca-calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uikit-dca-calculator";
+			};
+			name = Debug;
+		};
+		D8E09DAC2B470E3F0063A47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joe3524.uikit-dca-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uikit-dca-calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uikit-dca-calculator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,6 +596,15 @@
 			buildConfigurations = (
 				D8AD6D0E2B18BF28005E99FE /* Debug */,
 				D8AD6D0F2B18BF28005E99FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E09DAD2B470E3F0063A47D /* Build configuration list for PBXNativeTarget "uikit-dca-calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E09DAB2B470E3F0063A47D /* Debug */,
+				D8E09DAC2B470E3F0063A47D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

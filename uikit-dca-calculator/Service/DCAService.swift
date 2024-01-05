@@ -8,6 +8,10 @@
 import Foundation
 
 struct DCAService {
+    func performSubtraction(num1: Int, num2: Int) -> Int {
+        return num1 - num2
+    }
+    
     func calculate(asset: Asset, initialInvestmentAmount: Double,
                    monthlyDollarCostAveragingAmount: Double,
                    initialDateOfInvestmentIndex: Int) -> DCAResult {
