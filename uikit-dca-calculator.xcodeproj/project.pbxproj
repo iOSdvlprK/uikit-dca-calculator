@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80056A32B50294F00CA311E /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80056A22B50294F00CA311E /* CalculatorPresenter.swift */; };
 		D83EF3AE2B21F6930073E76D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EF3AD2B21F6930073E76D /* String+Extensions.swift */; };
 		D83EF3B02B2207BC0073E76D /* UITextfield+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */; };
 		D842EC5D2B1CC30E001E0025 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D80056A22B50294F00CA311E /* CalculatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
 		D83EF3AD2B21F6930073E76D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extensions.swift"; sourceTree = "<group>"; };
 		D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				D8EE3CF32B1A01D100A82015 /* APIService.swift */,
 				D85470DF2B4052F5001454FA /* DCAService.swift */,
+				D80056A22B50294F00CA311E /* CalculatorPresenter.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				D8EE3CF42B1A01D100A82015 /* APIService.swift in Sources */,
 				D89F2D182B20C1E500CD6322 /* Asset.swift in Sources */,
 				D8F3187A2B3C73A500B65074 /* Int+Extensions.swift in Sources */,
+				D80056A32B50294F00CA311E /* CalculatorPresenter.swift in Sources */,
 				D83EF3AE2B21F6930073E76D /* String+Extensions.swift in Sources */,
 				D89F2D162B20BFFB00CD6322 /* CalculatorTableViewController.swift in Sources */,
 				D8AD6D192B18D872005E99FE /* SearchTableViewCell.swift in Sources */,
