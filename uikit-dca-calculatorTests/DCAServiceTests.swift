@@ -1,5 +1,5 @@
 //
-//  uikit_dca_calculatorTests.swift
+//  DCAServiceTests.swift
 //  uikit-dca-calculatorTests
 //
 //  Created by joe on 1/5/24.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import uikit_dca_calculator
 
-final class uikit_dca_calculatorTests: XCTestCase {
+final class DCAServiceTests: XCTestCase {
     var sut: DCAService!
 
     override func setUpWithError() throws {

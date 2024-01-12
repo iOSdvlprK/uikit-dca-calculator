@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D80056A32B50294F00CA311E /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80056A22B50294F00CA311E /* CalculatorPresenter.swift */; };
+		D80056A52B503AA300CA311E /* CalculatorPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80056A42B503AA300CA311E /* CalculatorPresenterTests.swift */; };
 		D83EF3AE2B21F6930073E76D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EF3AD2B21F6930073E76D /* String+Extensions.swift */; };
 		D83EF3B02B2207BC0073E76D /* UITextfield+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */; };
 		D842EC5D2B1CC30E001E0025 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */; };
@@ -29,7 +30,7 @@
 		D8B332832B39BE6F00C915AA /* DateSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B332822B39BE6F00C915AA /* DateSelectionTableViewController.swift */; };
 		D8C559372B1DECC3005ADB87 /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C559362B1DECC3005ADB87 /* UIAnimatable.swift */; };
 		D8C559392B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C559382B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift */; };
-		D8E09DA82B470E3F0063A47D /* uikit_dca_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E09DA72B470E3F0063A47D /* uikit_dca_calculatorTests.swift */; };
+		D8E09DA82B470E3F0063A47D /* DCAServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E09DA72B470E3F0063A47D /* DCAServiceTests.swift */; };
 		D8EE3CF42B1A01D100A82015 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE3CF32B1A01D100A82015 /* APIService.swift */; };
 		D8EE3CF72B1A06B600A82015 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE3CF62B1A06B600A82015 /* SearchResults.swift */; };
 		D8F3187A2B3C73A500B65074 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F318792B3C73A500B65074 /* Int+Extensions.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		D80056A22B50294F00CA311E /* CalculatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
+		D80056A42B503AA300CA311E /* CalculatorPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenterTests.swift; sourceTree = "<group>"; };
 		D83EF3AD2B21F6930073E76D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		D83EF3AF2B2207BC0073E76D /* UITextfield+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extensions.swift"; sourceTree = "<group>"; };
 		D842EC5C2B1CC30E001E0025 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 		D8C559362B1DECC3005ADB87 /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
 		D8C559382B1E1C47005ADB87 /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		D8E09DA52B470E3F0063A47D /* uikit-dca-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uikit-dca-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8E09DA72B470E3F0063A47D /* uikit_dca_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uikit_dca_calculatorTests.swift; sourceTree = "<group>"; };
+		D8E09DA72B470E3F0063A47D /* DCAServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAServiceTests.swift; sourceTree = "<group>"; };
 		D8EE3CF32B1A01D100A82015 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D8EE3CF62B1A06B600A82015 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		D8F318792B3C73A500B65074 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
@@ -175,7 +177,8 @@
 		D8E09DA62B470E3F0063A47D /* uikit-dca-calculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				D8E09DA72B470E3F0063A47D /* uikit_dca_calculatorTests.swift */,
+				D8E09DA72B470E3F0063A47D /* DCAServiceTests.swift */,
+				D80056A42B503AA300CA311E /* CalculatorPresenterTests.swift */,
 			);
 			path = "uikit-dca-calculatorTests";
 			sourceTree = "<group>";
@@ -336,7 +339,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E09DA82B470E3F0063A47D /* uikit_dca_calculatorTests.swift in Sources */,
+				D80056A52B503AA300CA311E /* CalculatorPresenterTests.swift in Sources */,
+				D8E09DA82B470E3F0063A47D /* DCAServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
